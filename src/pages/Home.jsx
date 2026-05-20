@@ -1,21 +1,26 @@
-import Button from "../components/ui/Button";
-import SectionTitle from "../components/common/SectionTitle";
+import Navbar from "../components/common/Navbar";
 
 const Home = () => {
   return (
     <main>
-      <section className="section-padding">
-        <div className="container-custom">
-          <SectionTitle
-            subtitle="LeadBoost Marketing"
-            title="Premium Digital Growth Agency"
-          />
+      <Navbar />
 
-          <div className="flex justify-center">
-            <Button>Get Started</Button>
+      <div className="pt-24">
+        <section className="section-padding">
+          <div className="container-custom">
+            <h1
+              className="
+              heading-primary
+              text-5xl
+              md:text-7xl
+              text-center
+              "
+            >
+              Premium Digital Agency
+            </h1>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 };
