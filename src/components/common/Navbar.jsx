@@ -58,7 +58,7 @@ const Navbar = () => {
         >
           {/* LOGO */}
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center ">
             <img
               src={logo}
               alt="LeadBoost Marketing"
