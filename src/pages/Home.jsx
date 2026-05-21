@@ -5,6 +5,7 @@ import Hero from "../sections/Hero";
 import Portfolio from "../sections/Portfolio";
 import Services from "../sections/Services";
 import Testimonials from "../sections/Testimonials";
+import Footer from "../layouts/Footer";
 
 const Home = () => {
   return (
@@ -22,6 +23,8 @@ const Home = () => {
       <Testimonials />
 
       <Contact />
+
+      <Footer />
     </main>
   );
 };
