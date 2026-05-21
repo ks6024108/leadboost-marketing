@@ -123,7 +123,13 @@ const Navbar = () => {
           {/* RIGHT SIDE */}
 
           <div className="hidden lg:block">
-            <Button>Free Consultation</Button>
+            <a
+              href="https://wa.me/917597815531?text=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20grow%20my%20business%20online."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Free Consultation</Button>
+            </a>
           </div>
 
           {/* MOBILE MENU BUTTON */}
@@ -193,7 +199,13 @@ const Navbar = () => {
                 </a>
               ))}
 
-              <Button>Free Consultation</Button>
+              <a
+                href="https://wa.me/917597815531?text=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20grow%20my%20business%20online."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>Free Consultation</Button>
+              </a>
             </div>
           </motion.div>
         )}
