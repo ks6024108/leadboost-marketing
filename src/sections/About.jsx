@@ -59,6 +59,7 @@ const stats = [
 const About = () => {
   return (
     <section
+      id="about"
       className="
       relative
       py-32

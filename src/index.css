@@ -45,3 +45,24 @@ body {
 .transition-default {
   transition: all 0.3s ease;
 }
+/* 
+body::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
+
+  background-size: 4px 4px;
+
+  pointer-events: none;
+
+  opacity: 0.15;
+
+  z-index: 9999;
+} */

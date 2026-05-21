@@ -8,7 +8,34 @@ import Button from "../ui/Button";
 
 import logo from "../../assets/images/logo.png";
 
-const navLinks = ["Home", "Services", "Portfolio", "About", "Contact"];
+// const navLinks = ["Home", "Services", "Portfolio", "About", "Contact"];
+
+const navLinks = [
+  {
+    name: "Home",
+    path: "#home",
+  },
+
+  {
+    name: "Services",
+    path: "#services",
+  },
+
+  {
+    name: "About",
+    path: "#about",
+  },
+
+  {
+    name: "Portfolio",
+    path: "#portfolio",
+  },
+
+  {
+    name: "Contact",
+    path: "#contact",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,8 +105,8 @@ const Navbar = () => {
           >
             {navLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.name}
+                href={link.path}
                 className="
                 text-sm
                 text-gray-300
@@ -88,7 +115,7 @@ const Navbar = () => {
                 duration-300
                 "
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </nav>
@@ -152,8 +179,8 @@ const Navbar = () => {
             >
               {navLinks.map((link) => (
                 <a
-                  key={link}
-                  href="#"
+                  key={link.name}
+                  href={link.path}
                   className="
                   text-gray-300
                   hover:text-white
@@ -161,7 +188,7 @@ const Navbar = () => {
                   duration-300
                   "
                 >
-                  {link}
+                  {link.name}
                 </a>
               ))}
 

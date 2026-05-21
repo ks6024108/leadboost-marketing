@@ -9,6 +9,7 @@ import { fadeUp, staggerContainer } from "../animations/motion";
 const Portfolio = () => {
   return (
     <section
+      id="portfolio"
       className="
       relative
       py-32

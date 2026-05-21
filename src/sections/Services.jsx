@@ -7,6 +7,7 @@ import { fadeUp, staggerContainer } from "../animations/motion";
 const Services = () => {
   return (
     <section
+      id="services"
       className="
       relative
       py-32

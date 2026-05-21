@@ -2,19 +2,36 @@ const Button = ({ children }) => {
   return (
     <button
       className="
-      px-6 py-3
+      relative
+      overflow-hidden
+      px-8
+      py-4
       rounded-full
-      font-medium
       bg-linear-to-r
-      from-violet-600
-      to-cyan-500
+      from-cyan-400
+      to-violet-500
+      text-black
+      font-semibold
       hover:scale-105
+      hover:shadow-2xl
+      hover:shadow-cyan-500/30
       transition-all
       duration-300
-      cursor-pointer
       "
     >
-      {children}
+      <span className="relative z-10">{children}</span>
+
+      <div
+        className="
+        absolute
+        inset-0
+        bg-white/20
+        opacity-0
+        hover:opacity-100
+        transition-all
+        duration-300
+        "
+      />
     </button>
   );
 };

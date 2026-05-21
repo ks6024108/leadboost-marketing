@@ -20,6 +20,7 @@ const Contact = () => {
       {/* CTA SECTION */}
 
       <section
+        id="contact"
         className="
         relative
         py-32

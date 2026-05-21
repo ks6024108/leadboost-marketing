@@ -40,6 +40,7 @@ const floatingBubbles = [
 const Hero = () => {
   return (
     <section
+      id="home"
       className="
       relative
       overflow-hidden
