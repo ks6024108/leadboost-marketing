@@ -170,30 +170,37 @@ const Hero = () => {
 
             {/* BUTTONS */}
 
-            <div
-              className="
-              flex
-              flex-wrap
-              gap-4
-              "
-            >
-              <Button>Get Free Consultation</Button>
+            <div className="flex flex-wrap gap-4">
+              {/* WHATSAPP BUTTON */}
 
-              <button
-                className="
-                px-6
-                py-3
-                rounded-full
-                border
-                border-white/10
-                glass-effect
-                hover:border-cyan-400/30
-                transition-all
-                duration-300
-                "
+              <a
+                href="https://wa.me/917597815531?text=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20grow%20my%20business%20online."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                View Services
-              </button>
+                <Button>Get Free Consultation</Button>
+              </a>
+
+              {/* SERVICES BUTTON */}
+
+              <a href="#services">
+                <button
+                  className="
+                  px-6
+                  py-3
+                  rounded-full
+                  border
+                  border-white/10
+                  glass-effect
+                  hover:border-cyan-400/30
+                  hover:-translate-y-1
+                  transition-all
+                  duration-300
+                  "
+                >
+                  View Services
+                </button>
+              </a>
             </div>
 
             {/* STATS */}
