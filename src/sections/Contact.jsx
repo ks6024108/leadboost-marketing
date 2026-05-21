@@ -177,7 +177,10 @@ const Contact = () => {
                 {/* EMAIL */}
 
                 <a
-                  href="mailto:leadboostmarketing.com@gmail.com?subject=Business%20Growth%20Inquiry&body=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20discuss%20digital%20marketing%20services%20for%20my%20business."
+                  // href="mailto:leadboostmarketing.com@gmail.com?subject=Business%20Growth%20Inquiry&body=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20discuss%20digital%20marketing%20services%20for%20my%20business."
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=leadboostmarketing.com@gmail.com&su=Business%20Growth%20Inquiry&body=Hi%20LeadBoost%20Marketing,%20I%20want%20to%20discuss%20digital%20marketing%20services%20for%20my%20business."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                   inline-flex
                   items-center
