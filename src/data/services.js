@@ -5,48 +5,80 @@ import {
   Funnel,
   Palette,
   ShoppingCart,
+  Store,
+  BarChart3,
+  Boxes,
+  BadgePercent,
 } from "lucide-react";
 
 export const services = [
   {
     title: "Google & Social Media Ads",
     description:
-      "High-converting paid ad campaigns designed to generate leads and maximize ROI.",
+      "High-performing Google, Facebook, and Instagram ad campaigns focused on lead generation, brand awareness, and ROI growth.",
     icon: Megaphone,
   },
 
   {
-    title: "SEO & Google Ranking",
+    title: "Local SEO & Google Ranking",
     description:
-      "Boost your visibility and rank higher on Google with smart SEO strategies.",
+      "Improve your Google rankings, local visibility, and map presence with smart SEO strategies tailored for local businesses.",
     icon: Search,
   },
 
   {
-    title: "Website Design & Development",
+    title: "Website Design & SEO",
     description:
-      "Modern responsive websites built for branding, speed, and conversions.",
+      "Premium responsive websites optimized for branding, performance, user experience, and search engine visibility.",
     icon: Globe,
   },
 
   {
-    title: "Lead Generation Funnels",
+    title: "Lead Generation Funnel",
     description:
-      "Optimized funnels that turn visitors into quality business leads.",
+      "Conversion-focused lead funnels designed to turn visitors into qualified business inquiries and customers.",
     icon: Funnel,
   },
 
   {
     title: "Branding & Creative Design",
     description:
-      "Creative visuals and branding strategies that make your business stand out.",
+      "Creative branding solutions including social creatives, business identity, ad creatives, and visual marketing assets.",
     icon: Palette,
   },
 
   {
-    title: "E-Commerce Management",
+    title: "E-Commerce Strategy",
     description:
-      "End-to-end ecommerce growth solutions including listings, ads, and management.",
+      "Strategic ecommerce growth planning for scaling online stores, improving conversions, and increasing revenue.",
     icon: ShoppingCart,
+  },
+
+  {
+    title: "Online Store Management",
+    description:
+      "Complete management solutions for ecommerce stores including updates, optimization, operations, and performance tracking.",
+    icon: Store,
+  },
+
+  {
+    title: "Marketplace Optimization",
+    description:
+      "Optimize your presence on marketplaces like Amazon and Flipkart with better visibility, conversions, and sales performance.",
+    icon: BarChart3,
+  },
+
+  {
+    title: "Inventory & Orders Management",
+    description:
+      "Efficient inventory tracking and order management systems to streamline ecommerce business operations.",
+    icon: Boxes,
+  },
+
+  {
+    title: "Product Listing & Ads Optimization",
+    description:
+      "Professional product listings and ad optimization strategies designed to improve CTR, conversions, and product sales.",
+    icon: BadgePercent,
   },
 ];
