@@ -355,7 +355,7 @@ const Contact = () => {
                 ].map((item, index) => (
                   <a
                     key={index}
-                    href="#"
+                    href="#services"
                     className="
                     flex
                     items-center
@@ -392,7 +392,17 @@ const Contact = () => {
                   (item, index) => (
                     <a
                       key={index}
-                      href="#"
+                      href={
+                        item === "Home"
+                          ? "#home"
+                          : item === "Services"
+                          ? "#services"
+                          : item === "About"
+                          ? "#about"
+                          : item === "Portfolio"
+                          ? "#portfolio"
+                          : "#contact"
+                      }
                       className="
                     flex
                     items-center
