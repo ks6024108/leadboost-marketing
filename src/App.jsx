@@ -8,6 +8,13 @@ import ScrollProgress from "./components/global/ScrollProgress";
 
 import FloatingWhatsApp from "./components/global/FloatingWhatsApp";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from "./layouts/MainLayout";
+
+import ServicesPage from "./pages/ServicesPage";
+import ContactPage from "./pages/ContactPage";
+
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +36,17 @@ const App = () => {
 
           <FloatingWhatsApp />
 
-          <Home />
+          <BrowserRouter>
+            <Routes>
+              <Route element={<MainLayout />}>
+                <Route path="/" element={<Home />} />
+
+                <Route path="/services" element={<ServicesPage />} />
+
+                <Route path="/contact" element={<ContactPage />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
         </>
       )}
     </>
