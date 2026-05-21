@@ -1,5 +1,6 @@
 import Navbar from "../components/common/Navbar";
 import About from "../sections/About";
+import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
 import Portfolio from "../sections/Portfolio";
 import Services from "../sections/Services";
@@ -19,8 +20,12 @@ const Home = () => {
       <Portfolio />
 
       <Testimonials />
+
+      <Contact />
     </main>
   );
 };
 
 export default Home;
+
+// <Contact />
