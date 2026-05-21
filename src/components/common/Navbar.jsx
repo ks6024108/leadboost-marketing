@@ -181,6 +181,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.path}
+                  onClick={() => setIsOpen(false)}
                   className="
                   text-gray-300
                   hover:text-white
