@@ -8,12 +8,5 @@
       "source": "/contact",
       "destination": "/index.html"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/:path((?!services|contact).*)",
-      "destination": "/",
-      "permanent": false
-    }
   ]
 }
