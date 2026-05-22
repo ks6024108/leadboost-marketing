@@ -121,7 +121,7 @@ const Footer = () => {
                 <HashLink
                   smooth
                   key={index}
-                  to="/services"
+                  to="/services/#services"
                   className="
                   flex
                   items-center
@@ -156,18 +156,19 @@ const Footer = () => {
             <div className="space-y-4">
               {["Home", "Services", "About", "Portfolio", "Contact"].map(
                 (item, index) => (
-                  <a
+                  <HashLink
+                    smooth
                     key={index}
-                    href={
+                    to={
                       item === "Home"
                         ? "/"
                         : item === "Services"
-                        ? "/services"
+                        ? "/services/#services"
                         : item === "About"
                         ? "/#about"
                         : item === "Portfolio"
                         ? "/#portfolio"
-                        : "/contact"
+                        : "/contact/#contact"
                     }
                     className="
                     flex
@@ -182,7 +183,7 @@ const Footer = () => {
                     <ArrowUpRight className="w-4 h-4" />
 
                     {item}
-                  </a>
+                  </HashLink>
                 )
               )}
             </div>
