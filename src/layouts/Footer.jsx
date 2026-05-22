@@ -161,7 +161,7 @@ const Footer = () => {
                     key={index}
                     to={
                       item === "Home"
-                        ? "/"
+                        ? "/#home"
                         : item === "Services"
                         ? "/services/#services"
                         : item === "About"

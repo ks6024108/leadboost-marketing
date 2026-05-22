@@ -236,7 +236,7 @@ import logo from "../assets/images/logo.png";
 const navLinks = [
   {
     name: "Home",
-    path: "/",
+    path: "/#home",
   },
 
   {
