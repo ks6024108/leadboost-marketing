@@ -1,16 +1,6 @@
-// import React from "react";
-
 import { motion } from "framer-motion";
 
-import {
-  Phone,
-  Mail,
-  // MapPin,
-  // Instagram,
-  // FacebookIcon,
-  // ArrowUpRight,
-} from "lucide-react";
-// import { FaInstagram } from "react-icons/fa";
+import { Phone, Mail } from "lucide-react";
 
 import { fadeUp, staggerContainer } from "../animations/motion";
 

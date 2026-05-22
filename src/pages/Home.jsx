@@ -1,5 +1,5 @@
+import ContactCTA from "../components/contact/ContactCTA";
 import About from "../sections/About";
-import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
 import Portfolio from "../sections/Portfolio";
 import Services from "../sections/Services";
@@ -18,7 +18,7 @@ const Home = () => {
 
       <Testimonials />
 
-      <Contact />
+      <ContactCTA />
     </main>
   );
 };

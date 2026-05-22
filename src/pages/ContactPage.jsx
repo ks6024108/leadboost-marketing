@@ -1,9 +1,20 @@
-import Contact from "../sections/Contact";
+import ContactCTA from "../components/contact/ContactCTA";
+import ContactInfo from "../components/contact/ContactInfo";
+import ContactMap from "../components/contact/ContactMap";
+import FAQ from "../components/contact/FAQ";
 
 const ContactPage = () => {
   return (
     <>
-      <Contact />
+      <main className="pt-20">
+        <ContactCTA />
+
+        <ContactInfo />
+
+        <ContactMap />
+
+        <FAQ />
+      </main>
     </>
   );
 };
