@@ -7,10 +7,13 @@
     {
       "source": "/contact",
       "destination": "/index.html"
-    },
+    }
+  ],
+  "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "source": "/:path((?!services|contact).*)",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }
