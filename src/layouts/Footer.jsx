@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 import { FaInstagram } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -117,9 +118,10 @@ const Footer = () => {
                 "Branding",
                 "Social Media Marketing",
               ].map((item, index) => (
-                <a
+                <HashLink
+                  smooth
                   key={index}
-                  href="#services"
+                  to="/services"
                   className="
                   flex
                   items-center
@@ -133,7 +135,7 @@ const Footer = () => {
                   <ArrowUpRight className="w-4 h-4" />
 
                   {item}
-                </a>
+                </HashLink>
               ))}
             </div>
           </div>
@@ -158,14 +160,14 @@ const Footer = () => {
                     key={index}
                     href={
                       item === "Home"
-                        ? "#home"
+                        ? "/"
                         : item === "Services"
-                        ? "#services"
+                        ? "/services"
                         : item === "About"
-                        ? "#about"
+                        ? "/#about"
                         : item === "Portfolio"
-                        ? "#portfolio"
-                        : "#contact"
+                        ? "/#portfolio"
+                        : "/contact"
                     }
                     className="
                     flex
