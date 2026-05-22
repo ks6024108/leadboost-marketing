@@ -1,30 +1,32 @@
-export const testimonials = [
+import { Search, PenTool, Rocket, BarChart3 } from "lucide-react";
+
+export const processSteps = [
   {
-    name: "Rahul Sharma",
-    company: "Jaipur Realty Hub",
-    review:
-      "LeadBoost Marketing helped us generate high-quality real estate leads consistently through Google Ads campaigns.",
+    icon: Search,
+    title: "Research & Strategy",
+    description:
+      "We deeply analyze your business, competitors, audience, and goals before creating a custom growth strategy.",
   },
 
   {
-    name: "Priya Mehta",
-    company: "Glow Fashion Store",
-    review:
-      "Their branding and social media marketing completely transformed our online presence and sales.",
+    icon: PenTool,
+    title: "Design & Development",
+    description:
+      "From premium websites to branding and ad creatives — we build modern digital assets focused on conversions.",
   },
 
   {
-    name: "Amit Verma",
-    company: "Urban Kitchen",
-    review:
-      "Professional team, fast execution, and excellent SEO results. Highly recommended for local businesses.",
+    icon: Rocket,
+    title: "Launch & Marketing",
+    description:
+      "We launch optimized campaigns across Google, Meta, SEO, and ecommerce platforms to drive real business growth.",
   },
 
   {
-    name: "Sneha Kapoor",
-    company: "Beauty Bloom",
-    review:
-      "The ecommerce management and ad optimization significantly improved our conversions and ROI.",
+    icon: BarChart3,
+    title: "Optimization & Scaling",
+    description:
+      "Continuous improvements, analytics tracking, and scaling strategies help maximize ROI and long-term growth.",
   },
 ];
 

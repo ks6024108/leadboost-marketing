@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-import { Star } from "lucide-react";
-
-import { testimonials, trustedCompanies } from "../data/testimonials";
+import { trustedCompanies, processSteps } from "../data/testimonials";
 
 import { fadeUp, staggerContainer } from "../animations/motion";
 
@@ -56,7 +54,7 @@ const Testimonials = () => {
             mb-4
             "
           >
-            Client Testimonials
+            Our Working Process
           </p>
 
           <h2
@@ -67,8 +65,8 @@ const Testimonials = () => {
             mb-6
             "
           >
-            Businesses Trust
-            <span className="gradient-text"> LeadBoost Marketing</span>
+            How We Help
+            <span className="gradient-text"> Businesses Grow Online</span>
           </h2>
 
           <p
@@ -78,12 +76,12 @@ const Testimonials = () => {
             leading-relaxed
             "
           >
-            Helping startups, local businesses, ecommerce brands, and service
-            providers grow faster with strategic digital solutions.
+            A simple but powerful process focused on branding, lead generation,
+            marketing performance, and long-term business growth.
           </p>
         </motion.div>
 
-        {/* TESTIMONIAL CARDS */}
+        {/* PROCESS CARDS */}
 
         <motion.div
           variants={staggerContainer}
@@ -97,103 +95,114 @@ const Testimonials = () => {
           mb-24
           "
         >
-          {testimonials.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-              }}
-              transition={{
-                duration: 0.3,
-              }}
-              className="
-              relative
-              glass-effect
-              rounded-[30px]
-              p-8
-              border
-              border-white/10
-              overflow-hidden
-              group
-              "
-            >
-              {/* CARD GLOW */}
+          {processSteps.map((step, index) => {
+            const Icon = step.icon;
 
-              <div
+            return (
+              <motion.div
+                key={index}
+                variants={fadeUp}
+                whileHover={{
+                  y: -8,
+                }}
+                transition={{
+                  duration: 0.3,
+                }}
                 className="
-                absolute
-                top-0
-                right-0
-                w-40
-                h-40
-                bg-cyan-500/10
-                blur-3xl
-                rounded-full
-                opacity-0
-                group-hover:opacity-100
-                transition-all
-                duration-500
-                "
-              />
-
-              {/* STARS */}
-
-              <div
-                className="
-                flex
-                items-center
-                gap-1
-                mb-6
                 relative
-                z-10
+                glass-effect
+                rounded-[30px]
+                p-8
+                border
+                border-white/10
+                overflow-hidden
+                group
                 "
               >
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="
-                    w-5
-                    h-5
-                    fill-cyan-400
-                    text-cyan-400
-                    "
-                  />
-                ))}
-              </div>
+                {/* CARD GLOW */}
 
-              {/* REVIEW */}
-
-              <p
-                className="
-                text-gray-300
-                leading-relaxed
-                text-lg
-                mb-8
-                relative
-                z-10
-                "
-              >
-                "{item.review}"
-              </p>
-
-              {/* CLIENT */}
-
-              <div className="relative z-10">
-                <h3
+                <div
                   className="
-                  text-xl
-                  font-semibold
-                  mb-1
+                  absolute
+                  top-0
+                  right-0
+                  w-40
+                  h-40
+                  bg-cyan-500/10
+                  blur-3xl
+                  rounded-full
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-all
+                  duration-500
+                  "
+                />
+
+                {/* STEP NUMBER */}
+
+                <div
+                  className="
+                  absolute
+                  top-6
+                  right-6
+                  text-5xl
+                  font-bold
+                  text-white/5
                   "
                 >
-                  {item.name}
+                  0{index + 1}
+                </div>
+
+                {/* ICON */}
+
+                <div
+                  className="
+                  w-16
+                  h-16
+                  rounded-2xl
+                  bg-cyan-400/10
+                  border
+                  border-cyan-400/20
+                  flex
+                  items-center
+                  justify-center
+                  mb-6
+                  relative
+                  z-10
+                  "
+                >
+                  <Icon className="w-8 h-8 text-cyan-400" />
+                </div>
+
+                {/* TITLE */}
+
+                <h3
+                  className="
+                  text-2xl
+                  font-semibold
+                  mb-4
+                  relative
+                  z-10
+                  "
+                >
+                  {step.title}
                 </h3>
 
-                <p className="text-cyan-400 text-sm">{item.company}</p>
-              </div>
-            </motion.div>
-          ))}
+                {/* DESCRIPTION */}
+
+                <p
+                  className="
+                  text-gray-400
+                  leading-relaxed
+                  relative
+                  z-10
+                  "
+                >
+                  {step.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </motion.div>
 
         {/* TRUSTED PLATFORMS */}
@@ -204,6 +213,8 @@ const Testimonials = () => {
           overflow-hidden
           "
         >
+          {/* LEFT FADE */}
+
           <div
             className="
             absolute
@@ -217,6 +228,8 @@ const Testimonials = () => {
             z-10
             "
           />
+
+          {/* RIGHT FADE */}
 
           <div
             className="
