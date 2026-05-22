@@ -10,7 +10,7 @@ const Home = () => {
     <main>
       <Hero />
 
-      <Services />
+      <Services limit={3} />
 
       <About />
 
