@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { ArrowUpRight } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 import { portfolioProjects } from "../data/portfolio";
 
@@ -31,6 +31,19 @@ const Portfolio = () => {
         "
       />
 
+      <div
+        className="
+        absolute
+        bottom-0
+        left-0
+        w-96
+        h-96
+        bg-cyan-500/10
+        blur-3xl
+        rounded-full
+        "
+      />
+
       <div className="container-custom relative z-10">
         {/* SECTION HEADER */}
 
@@ -46,17 +59,31 @@ const Portfolio = () => {
           mb-20
           "
         >
-          <p
+          <div
             className="
-            text-cyan-400
-            font-medium
-            uppercase
-            tracking-widest
-            mb-4
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            rounded-full
+            glass-effect
+            mb-6
             "
           >
-            Portfolio
-          </p>
+            <Sparkles className="w-4 h-4 text-cyan-400" />
+
+            <p
+              className="
+              text-cyan-400
+              text-sm
+              tracking-widest
+              uppercase
+              "
+            >
+              What We Can Build
+            </p>
+          </div>
 
           <h2
             className="
@@ -66,8 +93,8 @@ const Portfolio = () => {
             mb-6
             "
           >
-            Real Projects &
-            <span className="gradient-text"> Growth Stories</span>
+            Powerful Digital Experiences
+            <span className="gradient-text"> For Modern Brands</span>
           </h2>
 
           <p
@@ -77,12 +104,13 @@ const Portfolio = () => {
             leading-relaxed
             "
           >
-            Explore some of our marketing, branding, SEO, ecommerce, and website
-            growth projects.
+            From premium websites and ecommerce stores to SEO systems and
+            marketing funnels — we create scalable digital solutions designed
+            for growth, conversions, and branding.
           </p>
         </motion.div>
 
-        {/* PORTFOLIO GRID */}
+        {/* GRID */}
 
         <motion.div
           variants={staggerContainer}
@@ -137,7 +165,7 @@ const Portfolio = () => {
                   "
                 />
 
-                {/* OVERLAY */}
+                {/* DARK OVERLAY */}
 
                 <div
                   className="
@@ -145,7 +173,7 @@ const Portfolio = () => {
                   inset-0
                   bg-linear-to-t
                   from-[#0B0F19]
-                  via-[#0B0F19]/40
+                  via-[#0B0F19]/50
                   to-transparent
                   "
                 />
@@ -206,44 +234,23 @@ const Portfolio = () => {
                   gap-4
                   "
                 >
-                  <h3
-                    className="
-                    text-2xl
-                    font-semibold
-                    max-w-[80%]
-                    "
-                  >
-                    {project.title}
-                  </h3>
+                  <div>
+                    <h3
+                      className="
+                      text-2xl
+                      font-semibold
+                      mb-2
+                      "
+                    >
+                      {project.title}
+                    </h3>
+
+                    <p className="text-sm text-gray-300">
+                      Modern • Fast • Conversion Focused
+                    </p>
+                  </div>
 
                   {/* ICON */}
-
-                  <div
-                    className="
-                    min-w-12
-                    h-12
-                    rounded-full
-                    bg-white/10
-                    border
-                    border-white/10
-                    flex
-                    items-center
-                    justify-center
-                    group-hover:bg-cyan-400
-                    transition-all
-                    duration-300
-                    "
-                  >
-                    <ArrowUpRight
-                      className="
-                      w-5
-                      h-5
-                      group-hover:text-black
-                      transition-all
-                      duration-300
-                      "
-                    />
-                  </div>
                 </div>
               </div>
 
@@ -263,6 +270,33 @@ const Portfolio = () => {
               />
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* BOTTOM NOTE */}
+
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="
+          text-center
+          mt-16
+          "
+        >
+          <p
+            className="
+            text-gray-500
+            text-sm
+            max-w-2xl
+            mx-auto
+            leading-relaxed
+            "
+          >
+            Every business is different — these are sample concepts showing the
+            kind of websites, funnels, ecommerce systems, and branding
+            experiences we can create for your business.
+          </p>
         </motion.div>
       </div>
     </section>

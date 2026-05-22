@@ -1,43 +1,44 @@
+import websiteImg from "../assets/portfolio/website.png";
+import adsImg from "../assets/portfolio/ads.png";
+import seoImg from "../assets/portfolio/seo.png";
+import ecommerceImg from "../assets/portfolio/ecommerce.png";
+import brandingImg from "../assets/portfolio/branding.png";
+import funnelImg from "../assets/portfolio/funnel.png";
+
 export const portfolioProjects = [
   {
-    title: "Luxury Fashion Brand",
-    category: "Social Media Ads",
-    image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
+    title: "Premium Business Website",
+    category: "Website Design & SEO",
+    image: websiteImg,
   },
 
   {
-    title: "Real Estate Lead Campaign",
-    category: "Google Ads & Funnels",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
+    title: "Google Ads Lead System",
+    category: "Google & Social Media Ads",
+    image: adsImg,
   },
 
   {
-    title: "E-Commerce Store Growth",
-    category: "Ecommerce Management",
-    image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop",
+    title: "Local Business SEO Growth",
+    category: "Local SEO & Google Ranking",
+    image: seoImg,
   },
 
   {
-    title: "Restaurant Branding",
-    category: "Creative Design & SEO",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
+    title: "E-Commerce Store Setup",
+    category: "E-Commerce Strategy",
+    image: ecommerceImg,
   },
 
   {
-    title: "Startup Website Launch",
-    category: "Website Development",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    title: "Creative Brand Identity",
+    category: "Branding & Creative Design",
+    image: brandingImg,
   },
 
   {
-    title: "Beauty Brand Marketing",
-    category: "Instagram Growth",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop",
+    title: "Sales Funnel & Automation",
+    category: "Lead Generation Funnel",
+    image: funnelImg,
   },
 ];
