@@ -29,7 +29,7 @@ const navLinks = [
 
   {
     name: "Portfolio",
-    path: "/#portfolio",
+    path: "/portfolio",
   },
 
   {

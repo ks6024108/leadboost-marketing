@@ -167,7 +167,7 @@ const Footer = () => {
                         : item === "About"
                         ? "/about/#about"
                         : item === "Portfolio"
-                        ? "/#portfolio"
+                        ? "/portfolio/#portfolio"
                         : "/contact/#contact"
                     }
                     className="
