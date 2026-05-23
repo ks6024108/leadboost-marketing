@@ -71,7 +71,9 @@ const ContactInfo = () => {
 
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
 
-                <p className="text-gray-400 leading-relaxed">{item.value}</p>
+                <p className="text-gray-400 leading-relaxed break-all text-sm">
+                  {item.value}
+                </p>
               </div>
             );
           })}

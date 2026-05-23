@@ -93,8 +93,8 @@ const Portfolio = () => {
             mb-6
             "
           >
-            Powerful Digital Experiences
-            <span className="gradient-text"> For Modern Brands</span>
+            Digital Solutions
+            <span className="gradient-text"> That Drive Growth</span>
           </h2>
 
           <p
@@ -146,51 +146,109 @@ const Portfolio = () => {
             >
               {/* IMAGE */}
 
+              {/* IMAGE */}
+
               <div
                 className="
                 relative
                 overflow-hidden
+                p-0.5
+                rounded-4xl
+                bg-linear-to-br
+                from-cyan-400/40
+                via-violet-500/30
+                to-transparent
                 "
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="
-                  w-full
-                  h-105
-                  object-cover
-                  transition-all
-                  duration-700
-                  group-hover:scale-110
-                  "
-                />
-
-                {/* DARK OVERLAY */}
+                {/* INNER IMAGE CONTAINER */}
 
                 <div
                   className="
-                  absolute
-                  inset-0
-                  bg-linear-to-t
-                  from-[#0B0F19]
-                  via-[#0B0F19]/50
-                  to-transparent
+                  relative
+                  overflow-hidden
+                  rounded-[30px]
+                  bg-[#09101d]
+                  border
+                  border-white/10
+                  shadow-[0_0_40px_rgba(34,211,238,0.08)]
                   "
-                />
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="
+                    w-full
+                    h-95
+                    object-cover
+                    transition-all
+                    duration-700
+                    brightness-[1.18]
+                    contrast-[1.12]
+                    saturate-[1.25]
+                    group-hover:scale-[1.04]
+                    group-hover:brightness-[1.25]
+                    "
+                  />
 
-                {/* HOVER OVERLAY */}
+                  {/* PREMIUM DARK OVERLAY */}
 
-                <div
-                  className="
-                  absolute
-                  inset-0
-                  bg-cyan-500/10
-                  opacity-0
-                  group-hover:opacity-100
-                  transition-all
-                  duration-500
-                  "
-                />
+                  <div
+                    className="
+                    absolute
+                    inset-0
+                    bg-linear-to-t
+                    from-[#060b16]/95
+                    via-[#060b16]/20
+                    to-transparent
+                    "
+                  />
+
+                  {/* TOP CYAN LIGHT */}
+
+                  <div
+                    className="
+                    absolute
+                    top-0
+                    inset-x-0
+                    h-28
+                    bg-linear-to-b
+                    from-cyan-400/15
+                    to-transparent
+                    "
+                  />
+
+                  {/* SIDE GLOW */}
+
+                  <div
+                    className="
+                    absolute
+                    -right-10
+                    top-10
+                    w-32
+                    h-32
+                    bg-cyan-400/20
+                    blur-3xl
+                    rounded-full
+                    "
+                  />
+
+                  {/* HOVER SHINE */}
+
+                  <div
+                    className="
+                    absolute
+                    inset-0
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-all
+                    duration-500
+                    bg-linear-to-r
+                    from-transparent
+                    via-white/5
+                    to-transparent
+                    "
+                  />
+                </div>
               </div>
 
               {/* CONTENT */}

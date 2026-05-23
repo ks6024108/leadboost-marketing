@@ -248,6 +248,8 @@ const About = () => {
 
               {/* FEATURES */}
 
+              {/* FEATURES */}
+
               <div className="space-y-6 relative z-10">
                 {features.map((feature, index) => {
                   const Icon = feature.icon;
@@ -264,32 +266,39 @@ const About = () => {
                       className="
                       flex
                       gap-5
-                      p-5
-                      rounded-3xl
-                      bg-white/5
+                      p-6
+                      rounded-[28px]
+                      bg-linear-to-br
+                      from-white/12
+                      via-white/8
+                      to-cyan-500/5
+                      backdrop-blur-2xl
                       border
-                      border-white/5
-                      hover:border-cyan-400/20
+                      border-white/10
+                      hover:border-cyan-400/40
+                      hover:bg-white/12
                       transition-all
                       duration-300
+                      shadow-[0_0_30px_rgba(0,255,255,0.05)]
                       "
                     >
                       {/* ICON */}
 
                       <div
                         className="
-                        min-w-14
-                        h-14
+                        min-w-16
+                        h-16
                         rounded-2xl
                         flex
                         items-center
                         justify-center
-                        bg-cyan-500/10
+                        bg-cyan-400/10
                         border
-                        border-cyan-400/10
+                        border-cyan-400/20
+                        shadow-[0_0_20px_rgba(0,255,255,0.15)]
                         "
                       >
-                        <Icon className="w-7 h-7 text-cyan-400" />
+                        <Icon className="w-8 h-8 text-cyan-300" />
                       </div>
 
                       {/* TEXT */}
@@ -297,9 +306,10 @@ const About = () => {
                       <div>
                         <h3
                           className="
-                          text-xl
+                          text-2xl
                           font-semibold
-                          mb-2
+                          text-white
+                          mb-3
                           "
                         >
                           {feature.title}
@@ -307,7 +317,8 @@ const About = () => {
 
                         <p
                           className="
-                          text-gray-400
+                        text-gray-200/80
+                          text-[15px]
                           leading-relaxed
                           "
                         >
