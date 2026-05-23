@@ -20,7 +20,8 @@ const ContactMap = () => {
           "
         >
           <iframe
-            src="https://www.google.com/maps?q=Hawa+Sadak+Civil+Lines+Jaipur&output=embed"
+            // src="https://www.google.com/maps?q=Hawa+Sadak+Civil+Lines+Jaipur&output=embed"
+            src="https://www.google.com/maps?q=LeadBoost+Marketing+%7C+Digital+Marketing+%26+E-commerce+Experts+Jaipur&output=embed"
             width="100%"
             height="450"
             loading="lazy"
