@@ -14,6 +14,7 @@ import MainLayout from "./layouts/MainLayout";
 
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,8 @@ const App = () => {
                 <Route path="/services" element={<ServicesPage />} />
 
                 <Route path="/contact" element={<ContactPage />} />
+
+                <Route path="/about" element={<AboutPage />} />
               </Route>
             </Routes>
           </BrowserRouter>

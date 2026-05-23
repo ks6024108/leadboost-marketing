@@ -165,7 +165,7 @@ const Footer = () => {
                         : item === "Services"
                         ? "/services/#services"
                         : item === "About"
-                        ? "/#about"
+                        ? "/about/#about"
                         : item === "Portfolio"
                         ? "/#portfolio"
                         : "/contact/#contact"
