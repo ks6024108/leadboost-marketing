@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaGoogle } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -71,7 +71,11 @@ const Footer = () => {
 
             {/* SOCIAL LINKS */}
 
+            {/* SOCIAL LINKS */}
+
             <div className="flex gap-4">
+              {/* INSTAGRAM */}
+
               <a
                 href="https://www.instagram.com/leadbooost_marketing/"
                 target="_blank"
@@ -86,13 +90,66 @@ const Footer = () => {
                 flex
                 items-center
                 justify-center
-                hover:border-cyan-400/30
+                hover:border-pink-400/40
+                hover:text-pink-400
                 hover:-translate-y-1
                 transition-all
                 duration-300
                 "
               >
                 <FaInstagram className="w-5 h-5" />
+              </a>
+
+              {/* FACEBOOK */}
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61562756415515"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                w-12
+                h-12
+                rounded-full
+                glass-effect
+                border
+                border-white/10
+                flex
+                items-center
+                justify-center
+                hover:border-blue-400/40
+                hover:text-blue-400
+                hover:-translate-y-1
+                transition-all
+                duration-300
+                "
+              >
+                <FaFacebookF className="w-5 h-5" />
+              </a>
+
+              {/* GOOGLE BUSINESS */}
+
+              <a
+                href="https://share.google/cGkhvot6yQ3MY63cU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                w-12
+                h-12
+                rounded-full
+                glass-effect
+                border
+                border-white/10
+                flex
+                items-center
+                justify-center
+                hover:border-cyan-400/40
+                hover:text-cyan-400
+                hover:-translate-y-1
+                transition-all
+                duration-300
+                "
+              >
+                <FaGoogle className="w-5 h-5" />
               </a>
             </div>
           </div>
