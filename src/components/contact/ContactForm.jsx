@@ -18,10 +18,10 @@ const ContactForm = () => {
 
     try {
       await emailjs.sendForm(
-        "service_r3mq5zq",
-        "template_hc364vu",
+        "service_dfvp3uh",
+        "template_gwmdt69",
         formRef.current,
-        "SQwexRmFDyFe4TM1l"
+        "XtM4kjqmMzp180c6W"
       );
 
       setSuccessMessage("Message sent successfully 🚀");
